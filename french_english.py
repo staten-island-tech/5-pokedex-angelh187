@@ -63,24 +63,20 @@ lang("this is a ttttttest") """
 
     honi("honihoni")
     print(honis) """
-def honi(sent):
-    h = 0 
-    for i in sent:
-        if i == "h" or "H":
-            h = h +1
-        elif i == "o" or "O":
-            h = h +1
-        elif i == "N" or "n":
-            h = h +1
-        else:
-            i == "i" or "I"
-            h = h +1
-            def honis(x):
-                x== h/4
-honiOHODNIHODNIK")
-
-        
 
 
+
+
+def honi():
+
+    honi = ["H", "h","O", "o", "N", "n","I", "i"]
+    b = 0
+    c = 1
+for i in honi:
+    if i == "H" or "h":
+        b += 2
+        c += 2
+
+print(b)
 
 
