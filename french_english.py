@@ -66,7 +66,7 @@ lang("this is a ttttttest") """
 
 
 
-
+""" 
 def honi():
 
     honi = ["H", "h","O", "o", "N", "n","I", "i"]
@@ -94,15 +94,39 @@ def magnus(word):
     for char in word:
         if state == 0 and char.upper() == "H":
             state = 1
-        elif state == 0 and char.upper() == "H":
+        elif state == 0 and char.upper() == "o":
             state = 2
-        elif state == 0 and char.upper() == "H":
+        elif state == 0 and char.upper() == "n":
             state = 3
-        elif state == 0 and char.upper() == "H":
+        elif state == 0 and char.upper() == "i":
             state = 0
             count += 1
     print (count)
 magnus("HHHHONI")
+ """
+
+""" 
+def answer(length,student,key):
+    x = 0
+    for i in range(length):
+        if student[i] and key[i] == "A":
+            x+=1
+        if student[i] and key[i] == "B":
+            x+=1
+        if student[i] and key[i] == "C":
+            x+=1
+    print(x)
+
+answer(3, "ACB","ABC")
+ """
 
 
+def tests(length,student,answer):
+    right = 0
+    for I in range(length):
+        if student[I] == answer[I]:
+            right += 1
+    print(right)
 
+
+tests(3, "CBC","ABC")
