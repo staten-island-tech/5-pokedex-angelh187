@@ -79,6 +79,7 @@ for i in honi:
 
 
 
+""" 
 
 
 
@@ -86,19 +87,18 @@ for i in honi:
 
 
 
-
-        
+"""         
 def magnus(word):
     count = 0 
     state = 0 
     for char in word:
         if state == 0 and char.upper() == "H":
             state = 1
-        elif state == 0 and char.upper() == "o":
+        elif state == 0 and char.upper() == "O":
             state = 2
-        elif state == 0 and char.upper() == "n":
+        elif state == 0 and char.upper() == "N":
             state = 3
-        elif state == 0 and char.upper() == "i":
+        elif state == 0 and char.upper() == "I":
             state = 0
             count += 1
     print (count)
@@ -129,4 +129,4 @@ def tests(length,student,answer):
     print(right)
 
 
-tests(3, "CBC","ABC")
+tests(3, "ABC","ABC")
