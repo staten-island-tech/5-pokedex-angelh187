@@ -77,6 +77,32 @@ for i in honi:
         b += 2
         c += 2
 
-print(b)
+
+
+
+
+
+
+
+
+
+
+        
+def magnus(word):
+    count = 0 
+    state = 0 
+    for char in word:
+        if state == 0 and char.upper() == "H":
+            state = 1
+        elif state == 0 and char.upper() == "H":
+            state = 2
+        elif state == 0 and char.upper() == "H":
+            state = 3
+        elif state == 0 and char.upper() == "H":
+            state = 0
+            count += 1
+    print (count)
+magnus("HHHHONI")
+
 
 
