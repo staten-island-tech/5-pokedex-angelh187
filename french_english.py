@@ -119,7 +119,7 @@ def answer(length,student,key):
 
 answer(3, "ACB","ABC")
  """
-
+""" 
 
 def tests(length,student,answer):
     right = 0
@@ -130,3 +130,17 @@ def tests(length,student,answer):
 
 
 tests(3, "ABC","ABC")
+ """
+
+def data(monthly,month,spent):
+    left = 0 
+    total = 0
+    for i in spent:
+        if i > 0:
+            left = monthly - i
+        elif i < 0:
+            left = left + monthly
+    total = left + monthly
+    print(total)
+data(10,3,[3,9,0])
+
