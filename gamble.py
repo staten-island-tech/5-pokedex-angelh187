@@ -48,4 +48,4 @@ def gamble(money,m1,m2,m3):
         played -=1 
     print(played)
 
-gamble(48,3,10,4)
+    gamble(48,3,10,4)
