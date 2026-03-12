@@ -1,31 +1,3 @@
-""" def gamble(money,m1,m2,m3):
-    played = 0
-    while money > 0:
-        money -= 1
-        m1 +=1
-        played +=1
-        if m1 == 35:
-            money += 30
-            m1 = 0
-    if money > 0:
-        money -= 1
-        m2 += 1
-        played +=1
-        if m2 == 100:
-            money += 60
-            m2 = 0
-    if money > 0:
-        money += 1 
-        m3 += 1 
-        played += 1 
-        if m3 == 10:
-            money += 9
-            m3 = 0
-    print(played)
-
-gamble(48,3,10,4) """
-
-
 def gamble(money,m1,m2,m3):
     played = 0
     while money > 0:
@@ -35,17 +7,20 @@ def gamble(money,m1,m2,m3):
         if m1 == 35:
             money += 30
             m1 = 0
-        elif m2 == 100:
-            money += 60
-            m2 = 0
-        money += 1 
-        m3 += 1 
-        played += 1 
-    else:
-        m3 == 10
-        money += 9
-        m3 = 0
-        played -=1 
-    print(played)
+        if money > 0:
+            money -= 1
+            m2 += 1
+            played +=1
+            if m2 == 100:
+                money += 60
+                m2 = 0
+        if money > 0:
+            money -= 1 
+            m3 += 1 
+            played += 1 
+            if m3 == 10:
+                money += 9
+                m3 = 0
+    print(f"Martha plays {played} times before going broke")
 
-    gamble(48,3,10,4)
+gamble(77,4,9,3)

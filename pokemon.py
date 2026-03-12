@@ -15,5 +15,7 @@ for item in types:
 
 element = (input("What element of pokemon do you want? "))
 for item in data:
-    if item["type"] == element:
-       print(item["name"])
+    if item["type"] == element: 
+       print(item["name"]) 
+
+       print("hi rat here")
