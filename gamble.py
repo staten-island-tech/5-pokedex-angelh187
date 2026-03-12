@@ -35,18 +35,16 @@ def gamble(money,m1,m2,m3):
         if m1 == 35:
             money += 30
             m1 = 0
-        money -= 1
-        m2 += 1
-        played +=1
-        if m2 == 100:
+        elif m2 == 100:
             money += 60
             m2 = 0
         money += 1 
         m3 += 1 
         played += 1 
-        if m3 == 10:
-            money += 9
-            m3 = 0
+    else:
+        m3 == 10
+        money += 9
+        m3 = 0
         played -=1 
     print(played)
 

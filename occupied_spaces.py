@@ -5,4 +5,4 @@ def occupied(n,y,t):
             found +=1
     print(found)        
 
-occupied(5,"cc..c","..ccc.")
+occupied(5,"cc..c","..ccc")
