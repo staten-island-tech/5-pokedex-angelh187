@@ -9,13 +9,14 @@ types = json.load(type)
     print("Item#: ",index) 
     print(item["name"]) """
 
-lang = (input("Please select a language: "))
+""" lang = (input("Please select a language: "))
 for item in types:
     print(item[lang])
 
 element = (input("What element of pokemon do you want? "))
 for item in data:
     if item["type"] == element: 
-       print(item["name"]) 
+       print(item["name"])  """
 
-       print("hi rat here")
+
+print("happy birthdayyayay!!!!!!!!!!!!")

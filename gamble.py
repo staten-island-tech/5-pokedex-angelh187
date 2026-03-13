@@ -1,4 +1,4 @@
-def gamble(money,m1,m2,m3):
+""" def gamble(money,m1,m2,m3):
     played = 0
     while money > 0:
         money -= 1
@@ -23,4 +23,25 @@ def gamble(money,m1,m2,m3):
                 m3 = 0
     print(f"Martha plays {played} times before going broke")
 
+gamble(77,4,9,3) """
+
+def gamble(money,m1,m2,m3):
+    played = 0 
+    while money > 0:
+        played += 1 
+        if m1 == 35:
+            money += 29
+            m1 = 0
+        elif m2 == 100:
+            money += 99
+            m2 = 0
+        elif m3 == 10:
+            money += 8
+            m3 = 0
+        else:
+            money -= 1
+    print(f"Martha plays {played} times before going broke")
+
 gamble(77,4,9,3)
+
+    
