@@ -13,7 +13,7 @@ lang = (input("Please select a language: "))
 for item in types:
     print(item[lang])
 
-element = (input("What element of pokemon do you want? "))
+type = (input("What type of pokemon do you want? "))
 for item in data:
-    if "types" == input: 
-       print(item["name"])
+       if "type" == input:
+        print(item["name"])
