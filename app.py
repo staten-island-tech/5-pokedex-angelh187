@@ -3,6 +3,9 @@ import json
 pokedex = open("./pokedex.json", encoding="utf8")
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
+type = open("./types.json", encoding="utf8")
+types = json.load(type)
+ 
 
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
@@ -16,10 +19,20 @@ data = json.load(pokedex)
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
 
 lang = input("Welcome, please select a language: ")
-for index, item in enumerate("./pokedex.json"):
-    print("Item#: ",lang)
+for index, item in enumerate(data):
+    print(index,":", item["name"][lang])
 
-ty = input("What type of pokemon?")
-for mons in data: 
+for index, ty in enumerate(types):
+    print(index,":",ty['english'])
+
+
+ty = input("What type of pokemon? ")
+for mons in data:
     if ty in mons['type']:
         print(mons['name']['english'])
+
+search = input("Please select a pokemon: ")
+match = 0
+for i in data:
+    if search in i['name']['type']:
+         print(i['name']['english'])
