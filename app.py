@@ -30,9 +30,9 @@ ty = input("What type of pokemon? ")
 for mons in data:
     if ty in mons['type']:
         print(mons['name']['english'])
+        
 
 search = input("Please select a pokemon: ")
-match = 0
 for i in data:
-    if search in i['name']['type']:
+    if search in i['name']:
          print(i['name']['english'])
