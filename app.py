@@ -30,6 +30,9 @@ ty = input("What type of pokemon? ")
 for mons in data:
     if ty in mons['type']:
         print(mons['name']['english'])
+    if ty != mons["type"]:
+        print("None found.")
+
         
 
 search = input("Please select a pokemon: ")
