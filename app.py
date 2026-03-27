@@ -33,6 +33,6 @@ for mons in data:
         
 
 search = input("Please select a pokemon: ")
-for i in data:
-    if search in i['name']:
-         print(i['name']['english'])
+for mon in data:
+    if search in mon["name"]['english']:
+        print(mon['name']['english'])
