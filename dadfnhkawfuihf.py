@@ -5,13 +5,17 @@ wards = {
     "Oncology":    ["Ivy", "Bob"]
 }
 
-def ward(peeps):
-    staff = {}
-    for people, dep in staff.items:
-        for people in wards:
-            if people == ward["names"]:
-                print(people)
+staff = {}
 
+
+for people, dep in wards.items():
+    for deps in dep:
+        if dep not in staff:
+            staff[deps] = [people]
+        else:
+            staff[deps].append(people)
+
+print(staff['Bob'])
 
 
             
